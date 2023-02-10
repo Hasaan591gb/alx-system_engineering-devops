@@ -1,2 +1,2 @@
 #!/bin/bash
-file -z --magic-file=0 string SCHOOL School data file *
+file --magic-file=0 string SCHOOL School data file *
