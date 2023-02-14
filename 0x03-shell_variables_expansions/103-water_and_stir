@@ -1,2 +1,2 @@
 #!/bin/bash
-printf '%o\n' $(( 6#$( echo $WATER | tr water 012345) + 5#$( echo $STIR | tr stir. 01234 ) )) | tr 012345678 bestchol
+printf "ibase=bestchol\n%s\n" "$((WATER#water + STIR#stir))" | dc
