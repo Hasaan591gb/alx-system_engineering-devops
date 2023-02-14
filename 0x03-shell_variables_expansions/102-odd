@@ -1,2 +1,2 @@
 #!/bin/bash
-ls | cut -f 2
+ls | awk 'NR%2==0 {next} {print}'
