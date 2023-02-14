@@ -1,2 +1,2 @@
 #!/bin/bash
-ls | awk 'NR%2==0 {next} {print}'
+ls | grep -n ' ' | paste -d '\n' - - | head -n $(($(ls | wc -l) / 2)) | cut -f 2-
