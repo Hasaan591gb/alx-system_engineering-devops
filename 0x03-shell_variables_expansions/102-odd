@@ -1,2 +1,2 @@
 #!/bin/bash
-Perl -ne 'print if $. % 2 == 1'
+ls | tr ' ' '\n' | cut -f 2,4,6,8,10
