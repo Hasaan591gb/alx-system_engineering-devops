@@ -1,2 +1,2 @@
 #!/bin/bash
-cut -f2 | ls
+ls | cut -d$'\n' -f1,3-
