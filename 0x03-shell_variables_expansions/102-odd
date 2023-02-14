@@ -1,2 +1,2 @@
 #!/bin/bash
-ls | cut -f2
+cut -f2 | ls
