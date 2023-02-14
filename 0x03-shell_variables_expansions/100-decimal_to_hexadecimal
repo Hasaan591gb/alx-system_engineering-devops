@@ -1,2 +1,2 @@
 #!/bin/bash
-echo -e "obase=16\nibase=10\n$DECIMAL\n\n" | tr '\n' ' ' | tr -d '\n' | dc | tr '[:upper:]' '[:lower:]'; echo
+echo -e "obase=16\n $DECIMAL" | bc
