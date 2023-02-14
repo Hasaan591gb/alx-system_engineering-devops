@@ -1,2 +1,2 @@
 #!/bin/bash
-ls | grep -n ' ' | paste -d '\n' - - | head -n $(($(ls | wc -l) / 2)) | cut -f 2-
+Perl -lne 'print if $.% 2 ==1'
